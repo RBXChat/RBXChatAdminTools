@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModifyDirDialog</class>
+ <widget class="QMainWindow" name="ModifyDirDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RBXChat Admin Tools</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Users</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>781</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ROBLOX account</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Verification code</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Account verified</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="authEncrypt">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Automatically encrypt passwords with MD5</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="autoGen">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>0</y>
+        <width>381</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Automatically generate verification code (edit to generate)</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Channels</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>771</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Channel Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Operators</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Whitelist</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Blacklist</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Muted</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Bans</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>771</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Reason</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ban Somebody</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>0</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
